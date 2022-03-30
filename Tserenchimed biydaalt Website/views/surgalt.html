@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body { 
+      display: grid;
+      grid-template-areas: 
+        "header header ads"
+        "nav article article"
+        "nav footer footer";
+      grid-template-rows: 80px 1fr 70px;  
+      grid-template-columns: 20% 1fr 15%;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      }  
+      .logo img {
+  height: 4rem;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+      article {
+      padding: 1.2em;
+      background: linear-gradient(rgb(245, 171, 111), white);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 20px;
+      
+      }
+      header {
+          background-image: url("/public/images/a4a22252ec2fc739bab54b72a95aaa46.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+      nav{
+          background: rgb(248, 247, 246);
+          background-image: url("/public/images/264973735_233428298911433_5580016134997075138_n.jpg");
+          background-size:400px;
+          background-repeat: no-repeat;
+          
+          
+      }
+      
+      div {
+          background-image: url("/public/images/istockphoto-993607066-1024x1024.jpg");
+          background-size:contain;
+          background-repeat: no-repeat;
+      } 
+      footer{
+          background-image: url("/public/images/a4a22252ec2fc739bab54b72a95aaa46.jpg");
+      } 
+ 
+
+    #pageHeader {
+      grid-area: header;
+      }
+    #pageFooter {
+      grid-area: footer;
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      text-align:center;
+      left: 25px;
+      bottom: 25px;
+      }
+    #siteAds { 
+      grid-area: ads; 
+      } 
+    @media all and (max-width: 1280px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+    }
+    </style>
+<body>
+    
+    <header id="pageHeader">
+        <a href="web.html" class="logo">
+            <img src="/public/images/logo.png" alt="">
+        </a>
+    </header>
+    <article id="mainArticle">
+        <p><b>Таны нохой сургах алхам</b></p>
+        <p><b>Нохойн дуулгавартай байдлын хөтөлбөрийг эхлүүлээрэй:</b> Та нохойг сургахаасаа өмнө суурь суурийг хэрхэн тогтоох талаар суралц.
+            Эерэг аргумент : Нохой сургах олон янзын арга байдаг боловч ихэнх нохой мэргэжилтнүүд нохой, сургагч хоёрын аль алинд эерэг арга зам гэж үздэг.
+            Тоглоомоор нохойг сурцгаая : Таны нохойг сургах нь хөгжилтэй байх ёстой! Хэрвээ та бүхэн сайн цагийг өнгөрөөж байхдаа үүнийг сурахад амархан гэж байгаа бол нохойн бэлтгэлийн дэглэмийн зарим тоглоомыг туршиж үзээрэй.
+            Зургаа долоо хоногийн туршид сайн бэлтгэгдсэн нохой : Энэ гарын авлагыг ашиглан удирдамж болгон ашиглахын тулд зургаан долоо хоногийн хугацаанд нохойнхаа үндсийг зааж болно.</p>
+            <p><b>Хаус сургалт ба агуулахын сургалт</b></p>
+            <p><b>Нохой бүр нь оосортой алхаж сурах хэрэгтэй.</b>Ихэнх газрууд хууль эрх зүйн зохицуулалттай байдаг учраас нохойгоо оосортой байлгах нь өөрийн аюулгүй байдалд зориулагдсан байдаг. Өөрийн нохой эсвэл гөлөгийг оосортойгоор танилцуулахыг хичээ, дараа нь түүнийг хэрхэн зөв алхахыг зааж сур.</p>
+            <p><b>Нохойг нийгэмшүүлэх:</b>Нийгэмд хамрагддаг нохой зан үйлийн асуудлуудыг хөгжүүлэх магадлал бага байдаг бөгөөд бусад хүмүүс илүү ихээр хүлээн авдаг.</p>
+            <p><b>Баталгаажуулах зан төлөв ба алдааг олж засварлах </b> Баталгаа нь таны нохойг сургах хамгийн сүүлийн алхам юм. Амьтны зан авирыг бататгахын тулд таны нохой цэцэрлэгт дуулгавартай байхын тулд эсвэл найзынхаа гэрт өөрийн тань зочны өрөөнд байх болно.</p>
+    </article>
+    <nav id="mainNav">
+    </nav>
+    <div id="siteAds"></div>
+    <footer id="pageFooter">
+    </footer>
+
+   
+</body>
+
+</html>
